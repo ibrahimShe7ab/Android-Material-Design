@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base Theme -->
+    <style name="Base.Theme.AndroidMaterialDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_200</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.MyApp.TitleLarge</item>
+    </style>
+
+    <!-- Main Theme with Dynamic Colors -->
+    <style name="Theme.AndroidMaterialDesign" parent="Base.Theme.AndroidMaterialDesign">
+
+     </style>
+
+    <!-- Toolbar Customization -->
+    <style name="ThemeOverlay.Material3.Dark.ActionBar" parent="ThemeOverlay.Material3.Dark">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.Material3.Dark</item>
+        <item name="actionBarStyle">@style/Widget.Material3.ActionBar.Solid</item>
+    </style>
+
+    <!-- Bottom Navigation Shape -->
+    <style name="ShapeAppearanceOverlay.BottomNav" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+
+    <!-- Typography -->
+    <style name="TextAppearance.MyApp.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+<!--        <item name="fontFamily">@font/roboto_bold</item>-->
+<!--        <item name="android:fontFamily">@font/roboto_bold</item>-->
+    </style>
+</resources>
