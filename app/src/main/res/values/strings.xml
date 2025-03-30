@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Android Material Design</string>
     <string name="fab_button">fab button</string>
+    <string name="hi_i_am_card_view">hi i\'am card view</string>
 </resources>
