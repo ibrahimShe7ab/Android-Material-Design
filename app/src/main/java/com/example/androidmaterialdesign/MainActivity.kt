@@ -1,6 +1,7 @@
 package com.example.androidmaterialdesign
 
 import android.os.Bundle
+import android.view.View
 import android.view.inputmethod.InputBinding
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -8,39 +9,65 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
  import com.example.androidmaterialdesign.databinding.CardViewBinding
+import com.example.androidmaterialdesign.databinding.ChipsGroupBinding
 import com.example.androidmaterialdesign.databinding.InputTextFieldBinding
+import com.google.android.material.chip.Chip
 
 class MainActivity : AppCompatActivity() {
 //    lateinit var binding:ActivityMainBinding
 //    lateinit var binding: CardViewBinding
-    lateinit var binding: InputTextFieldBinding
+//    lateinit var binding: InputTextFieldBinding
+    lateinit var binding: ChipsGroupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        binding=ActivityMainBinding.inflate(layoutInflater)
-        binding= InputTextFieldBinding.inflate(layoutInflater)
+//        binding=ActivityMainBinding.inflate(layoutInflater)
+        binding= ChipsGroupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //        callFab()
-errorTextFiledHandling()
+//errorTextFiledHandling()
+        callback()
+      }
 
+    private fun callback() {
+        binding.apply {
+            chip1.setOnClickListener { chipClicked(it) }
+            chip2.setOnClickListener { chipClicked(it) }
+            chip3.setOnClickListener { chipClicked(it) }
+            chip4.setOnClickListener { chipClicked(it) }
+            chip5.setOnClickListener { chipClicked(it) }
+            chip6.setOnClickListener { chipClicked(it) }
+            chip7.setOnClickListener { chipClicked(it) }
+            chip8.setOnClickListener { chipClicked(it) }
+
+
+        }
     }
 
     fun callFab(){
 //binding.fab.setOnClickListener { Toast.makeText(this, "fab clicked", Toast.LENGTH_SHORT).show() }
    }
 
-    fun  errorTextFiledHandling(){
-        binding.saveButton.setOnClickListener {
-        val input=binding .inoutText.text.toString()
-        if (input.isEmpty()){
-            binding.inputLayout.error="must not empty"
-            binding.inputLayout.setErrorIconDrawable(R.drawable.ic_error)
+//    fun  errorTextFiledHandling(){
+//        binding.saveButton.setOnClickListener {
+//        val input=binding .inoutText.text.toString()
+//        if (input.isEmpty()){
+//            binding.inputLayout.error="must not empty"
+//            binding.inputLayout.setErrorIconDrawable(R.drawable.ic_error)
+//
+//        }else if (input.length>10){
+//            binding.inputLayout.error="must > 10"
+//
+//        }else {
+//            binding.inputLayout.error = null
+//        }
+//    }
+//}
+private fun chipClicked(view: View) {
+    val chip = view as Chip
+    Toast.makeText(this, "تم اختيار: ${chip.text}", Toast.LENGTH_SHORT).show()
+}
 
-        }else if (input.length>10){
-            binding.inputLayout.error="must > 10"
-
-        }else {
-            binding.inputLayout.error = null
-        }
     }
-}
-}
+
+

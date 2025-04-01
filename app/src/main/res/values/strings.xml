@@ -4,4 +4,12 @@
     <string name="hi_i_am_card_view">hi i\'am card view</string>
     <string name="password">Password</string>
     <string name="save">save</string>
+    <string name="chip1">chip1</string>
+    <string name="chip2">chip2</string>
+    <string name="chip3">chip3</string>
+    <string name="chip4">chip4</string>
+    <string name="chip5">chip5</string>
+    <string name="chip6">chip6</string>
+    <string name="chip7">chip7</string>
+    <string name="chip8">chip8</string>
 </resources>
