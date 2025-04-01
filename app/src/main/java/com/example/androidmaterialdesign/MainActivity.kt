@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
  import com.example.androidmaterialdesign.databinding.CardViewBinding
-import com.example.androidmaterialdesign.databinding.ChipsGroupBinding
+import com.example.androidmaterialdesign.databinding.ChipGroupBinding
 import com.example.androidmaterialdesign.databinding.InputTextFieldBinding
 import com.google.android.material.chip.Chip
 
@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
 //    lateinit var binding:ActivityMainBinding
 //    lateinit var binding: CardViewBinding
 //    lateinit var binding: InputTextFieldBinding
-    lateinit var binding: ChipsGroupBinding
+    lateinit var binding: ChipGroupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        binding=ActivityMainBinding.inflate(layoutInflater)
 //        binding=ActivityMainBinding.inflate(layoutInflater)
-        binding= ChipsGroupBinding.inflate(layoutInflater)
+        binding= ChipGroupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //        callFab()
 //errorTextFiledHandling()
