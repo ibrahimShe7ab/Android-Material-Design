@@ -25,4 +25,5 @@
     <string name="cancel">cancle\n</string>
     <string name="decline">decline\n</string>
     <string name="accept">accept\n</string>
+    <string name="dismiss">dismiss</string>
 </resources>
