@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AndroidMaterialDesign"
         tools:targetApi="31">
         <activity
-            android:name=".drawer_bottom.DrawerActivity"
+            android:name=".DialogActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".bottom_nav.HomeActivity"
+            android:name=".drawer_bottom.DrawerActivity"
             android:exported="true">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -31,7 +31,18 @@
 <!--            </intent-filter>-->
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".bottom_nav.HomeActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
 
             <!-- <intent-filter> -->

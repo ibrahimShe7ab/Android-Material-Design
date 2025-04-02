@@ -20,4 +20,9 @@
     <string name="header_image">header image</string>
     <string name="ibrahim_shehab_eldin">ibrahim@shehab.eldin</string>
     <string name="ibrahim_shehab">ibrahim_shehab</string>
+    <string name="title">hi dialog</string>
+    <string name="supporting_text">support alert dialog \n</string>
+    <string name="cancel">cancle\n</string>
+    <string name="decline">decline\n</string>
+    <string name="accept">accept\n</string>
 </resources>

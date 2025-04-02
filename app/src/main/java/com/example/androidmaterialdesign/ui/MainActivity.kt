@@ -1,16 +1,10 @@
-package com.example.androidmaterialdesign
+package com.example.androidmaterialdesign.ui
 
 import android.os.Bundle
 import android.view.View
-import android.view.inputmethod.InputBinding
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
- import com.example.androidmaterialdesign.databinding.CardViewBinding
 import com.example.androidmaterialdesign.databinding.ChipGroupBinding
-import com.example.androidmaterialdesign.databinding.InputTextFieldBinding
 import com.google.android.material.chip.Chip
 
 class MainActivity : AppCompatActivity() {
@@ -69,5 +63,3 @@ private fun chipClicked(view: View) {
 }
 
     }
-
-
