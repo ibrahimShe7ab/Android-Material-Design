@@ -17,4 +17,7 @@
     <string name="favorite">Favorite</string>
     <string name="home">Home</string>
     <string name="notification">Notification</string>
+    <string name="header_image">header image</string>
+    <string name="ibrahim_shehab_eldin">ibrahim@shehab.eldin</string>
+    <string name="ibrahim_shehab">ibrahim_shehab</string>
 </resources>

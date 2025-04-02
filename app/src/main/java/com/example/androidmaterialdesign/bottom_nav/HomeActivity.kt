@@ -74,6 +74,16 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+//    private fun divider(){
+//
+//        binding.navDrawer.setNavigationItemSelectedListener { menuItem ->
+//            // Handle menu item selected
+//            menuItem.isChecked = true
+//
+//            true
+//        }
+//    }
+
 
 
 
