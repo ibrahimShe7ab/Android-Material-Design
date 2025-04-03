@@ -1,14 +1,12 @@
-package com.example.androidmaterialdesign.time_pickers
+package com.example.androidmaterialdesign.time_date_pickers
 
 import android.os.Bundle
 import android.text.format.DateFormat.is24HourFormat
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.androidmaterialdesign.R
 import com.example.androidmaterialdesign.databinding.ActivityTimePickersBinding
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 
@@ -18,15 +16,13 @@ class TimePickers : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityTimePickersBinding.inflate(layoutInflater)
          setContentView(binding.root)
-
-
-        callback()
+          callback()
      }
 
     private fun callback() {
         binding.picker.setOnClickListener { timePicker() }
+        binding.datePicker.setOnClickListener {datePacker()}
     }
-
 
     private fun timePicker() {
              val isSystem24Hour = is24HourFormat(this)
@@ -59,6 +55,21 @@ class TimePickers : AppCompatActivity() {
 
 
         }
+
+    private fun datePacker(){
+        val datePicker =
+            MaterialDatePicker.Builder.datePicker()
+                .setTitleText("Select date")
+                .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+                .build()
+
+        datePicker.show(supportFragmentManager,"datePicker")
+
+
+    }
+
+
+
 
     }
 
