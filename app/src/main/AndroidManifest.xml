@@ -13,13 +13,18 @@
         android:theme="@style/Theme.AndroidMaterialDesign"
         tools:targetApi="31">
         <activity
-            android:name=".top_app_bar.TopAppBar"
+            android:name=".siders.SlidersActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".top_app_bar.TopAppBar"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".alert_dislog.DialogActivity"
@@ -68,11 +73,13 @@
         <activity
             android:name=".bottom_sheet.BottomSheetActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
