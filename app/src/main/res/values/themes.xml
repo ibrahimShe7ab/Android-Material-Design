@@ -44,5 +44,28 @@
     </style>
 
 
+<!--    <style name="Theme.App" parent="ThemeOverlay.MaterialComponents.TimePicker">-->
 
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorOnPrimary">@color/colorPrimaryVariant</item>-->
+<!--        <item name="colorOnSurface">@color/colorAccent</item>-->
+<!--        <item name="chipStyle">@style/Widget.App.Chip</item>-->
+<!--    </style>-->
+<!--    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.TimePicker.Display">-->
+<!--        <item name="android:textColor">@color/colorAccent</item>-->
+<!--    </style>-->
+
+
+    <style name="Theme.App" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <!-- استخدام الألوان مباشرةً -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSurface">#FF7043</item> <!-- برتقالي محمر -->
+        <item name="colorPrimary">#D32F2F</item> <!-- أحمر غامق -->
+        <item name="colorAccent">#F44336</item> <!-- أحمر فاتح -->
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.TimePicker.Display">
+        <item name="android:textColor">#FFB74D</item> <!-- ذهبي مشمشي -->
+    </style>
 </resources>

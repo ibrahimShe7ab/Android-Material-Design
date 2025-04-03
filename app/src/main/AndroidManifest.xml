@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AndroidMaterialDesign"
         tools:targetApi="31">
         <activity
-            android:name=".siders.SlidersActivity"
+            android:name=".time_pickers.TimePickers"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".top_app_bar.TopAppBar"
+            android:name=".siders.SlidersActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".top_app_bar.TopAppBar"
+            android:exported="true"/>
         <activity
             android:name=".alert_dislog.DialogActivity"
             android:exported="true">
