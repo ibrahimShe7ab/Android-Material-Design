@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/appBarFavorite"
+        android:icon="@drawable/heart"
+        android:title="@string/favorite"
+        app:showAsAction="ifRoom"
+        />
+    <item
+    android:id="@+id/appBarHome"
+    android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+
+        android:title="@string/home" />
+    <item
+        android:id="@+id/appBarNotification"
+        android:icon="@drawable/bell"
+        app:showAsAction="never"
+
+        android:title="@string/notification" />
+</menu>
